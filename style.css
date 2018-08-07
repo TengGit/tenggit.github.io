@@ -68,7 +68,7 @@ body {
 .footer {
 	background-color: #666666;
 	padding: 4px;
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 	height: 36px;
 	width: 100%;
