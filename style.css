@@ -24,22 +24,52 @@ body {
 	background-color: #999999;
 }
 
+.banner a:active {
+	background-color: #333333;
+}
+
 .main {
+	width: 70%;
+	height: 100%;
+	background-color: #ffffcc;
+	color: black;
+	padding: 8px;
+	margin-bottom: 40px;
+	vertical-align: top;
+}
+
+.main p {
+	font-size: 100%;
+	padding: 0px;
+}
+
+.main p + p {
+	text-indent: 2em;
+}
+
+.sidebar {
+	width: 30%;
+	height: 100%;
 	background-color: #ccccff;
 	color: black;
-	padding: 4px;
+	vertical-align: top;
+	padding: 4px 0px 0px 0px;
 }
 
-.main div {
-	font-size: 100%;
-	padding: 4px;
+.sidebar ul li.caption {
+	font-weight: bold;
+	list-style: none;
 }
 
-.main div + div {
-	text-indent: 2em;
+.center-container {
+	margin-bottom: 40px;
 }
 
 .footer {
 	background-color: #666666;
 	padding: 4px;
+	position: absolute;
+	bottom: 0px;
+	height: 36px;
+	width: 100%;
 }
