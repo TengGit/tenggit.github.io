@@ -5,8 +5,29 @@
 <base target="_blank" />
 <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="instantMessage.css" />
+<style type="text/css">
+.message-welcome {
+	background-color: #669966;
+}
+</style>
+<script src="instantMessage.js" type="text/javascript"></script>
+<script type="text/javascript">
+var mc = new MessageContainer();
+function ready() {
+	document.body.appendChild(mc.element);
+	mc.createMessage({
+		title: "Welcome!",
+		content: "Welcome to my website.",
+		addTimeout: 200,
+		removeTimeout: 200, 
+		stayTimeout: 2000
+	}).element.className += " message-welcome";
+}
+
+</script>
 </head>
-<body>
+<body onload="ready()">
 <!-- banner -->
 <div class="banner" id="banner">
 <table style="width: 100%">
@@ -34,7 +55,7 @@
 than most pages you have seen, and I'm trying to improve this situation
 by learning and learning continously.</p>
 <p>If you have any ideas, suggestions, imrovements or just want to make friends with me,
-feel free to contact me dircetly on Github. My Github account is <a href="https://github.com/TengGit">TengGit</a>.</p>
+feel free to contact me directly on Github. My Github account is <a href="https://github.com/TengGit">TengGit</a>.</p>
 <p>Looking forward to your message.</p>
 </td></tr></table>
 <!-- footer -->

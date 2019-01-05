@@ -1,0 +1,24 @@
+.message-container {
+	position: fixed;
+	width: 200px;
+	right: 0px;
+	bottom: 0px;
+	overflow: hidden;
+}
+
+.message-wrapper {
+	background-color: #666666;
+	border: 2px dotted white;
+	margin: 8px;
+	padding: 8px;
+	color: white;
+}
+
+.message-title {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.message-content {
+	font-size: 0.8em;
+}
